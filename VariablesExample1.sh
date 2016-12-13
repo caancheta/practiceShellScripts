@@ -13,12 +13,5 @@ USER_NAME="caancheta"
 CURRENT_DIR=$(pwd)
 echo "Did you know your pwd is $CURRENT_DIR."
 echo "Creating file: ${USER_NAME}_file.txt"
-echo "test file demo" > ${USER_NAME}_file.txt
-if [[ -n $(find . -name ${USER_NAME}_file.c) ]]
-then
-  echo "${USER_NAME}_file.txt was created"
-  echo "Deleting file: ${USER_NAME}_file.txt"
-  rm ${USER_NAME}_file.txt
-else
-  echo "Error when creating: ${USER_NAME}_file.txt"
-fi
+touch "${USER_NAME}_file.txt"
+rm ${USER_NAME}_file.txt
