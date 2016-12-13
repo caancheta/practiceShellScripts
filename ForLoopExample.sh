@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Introduction to for-loops. As will be seen in these examples is that they are ideally used when iterating through lists or collections
+
 for i in 1 2 3 4 5
 do
   echo "Looping ... iteration #$i"
